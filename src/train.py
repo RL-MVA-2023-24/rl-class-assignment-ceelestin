@@ -41,8 +41,8 @@ class ProjectAgent:
 
     def load(self):
         self.device = torch.device('cpu')
-        self.experiments = ['/../exp1.pt',
-                            '/../exp2.pt'
+        self.experiments = ['/exp1.pt',
+                            '/exp2.pt'
                             ]
         self.weights = np.ones(len(self.experiments))
         self.paths = [os.getcwd() + exp for exp in self.experiments]
